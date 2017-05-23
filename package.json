@@ -1,0 +1,48 @@
+{
+  "name": "methon",
+  "version": "0.0.0",
+  "description": "Extract a list of inherited, enumerable and non-enumerable method names.",
+  "main": "methon.js",
+  "support": "methon.support.js",
+  "deploy": "methon.deploy.js",
+  "browser": "methon.deploy.js",
+  "scripts": {
+    "build": "babel methon.js --out-file methon.support.js --source-maps && webpack --progress --display-modules",
+    "test": "mocha methon-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/methon.git"
+  },
+  "keywords": [
+    "extract",
+    "list",
+    "inherited",
+    "enumerable",
+    "non-enumerable",
+    "method",
+    "name",
+    "methon"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/methon/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/methon#readme",
+  "dependencies": {
+    "apiqe": "^0.1.0",
+    "babel-runtime": "^6.23.0",
+    "meton": "^0.0.0",
+    "posp": "^0.5.0",
+    "protype": "^0.21.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-latest": "^6.24.1",
+    "source-map-loader": "^0.2.1",
+    "webpack": "^2.6.0"
+  }
+}

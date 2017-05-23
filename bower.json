@@ -1,0 +1,35 @@
+{
+  "name": "methon",
+  "version": "0.0.0",
+  "description": "Extract a list of inherited, enumerable and non-enumerable method names.",
+  "main": "methon.deploy.js",
+  "support": "methon.support.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "extract",
+    "list",
+    "inherited",
+    "enumerable",
+    "non-enumerable",
+    "method",
+    "name",
+    "methon"
+  ],
+  "homepage": "https://github.com/volkovasystems/methon",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "apiqe": "^0.1.0",
+    "meton": "^0.0.0",
+    "posp": "^0.5.0",
+    "protype": "^0.21.0"
+  }
+}
