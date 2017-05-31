@@ -48,26 +48,39 @@
 	@include:
 		{
 			"apiqe": "apiqe",
+			"een": "een",
+			"eqe": "eqe",
+			"fname": "fname",
 			"meton": "meton",
 			"posp": "posp",
 			"protype": "protype",
+			"pyck": "pyck"
 		}
 	@end-include
 */
 
 const apiqe = require( "apiqe" );
+const een = require( "een" );
+const eqe = require( "eqe" );
+const fname = require( "fname" );
 const meton = require( "meton" );
 const posp = require( "posp" );
 const protype = require( "protype" );
+const pyck = require( "pyck" );
 
-const methon = function methon( entity ){
+const checker = function checker( blueprint, constructor ){
+	return eqe( blueprint, constructor ) || fname( blueprint ) === fname( constructor );
+};
+
+const methon = function methon( entity, limit ){
 	/*;
 		@meta-configuration:
 			{
 				"entity:required": [
 					"function",
 					"object"
-				]
+				],
+				"limit": "[function,string]"
 			}
 		@end-meta-configuration
 	*/
@@ -80,10 +93,21 @@ const methon = function methon( entity ){
 		throw new Error( "invalid entity" );
 	}
 
+	limit = pyck( limit, [ FUNCTION, STRING ] );
+
 	let prototype = entity.prototype;
+
+	if( een( limit, prototype.constructor, checker ) ){
+		return [ ];
+	}
+
 	let method = meton( prototype );
 
 	while( prototype = Object.getPrototypeOf( prototype ) ){
+		if( een( limit, prototype.constructor, checker ) ){
+			continue;
+		}
+
 		method = apiqe( method, meton( prototype ) );
 	}
 

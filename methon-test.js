@@ -26,4 +26,6 @@ assert.equal( method.some( ( method ) => method === "setA" ), true, "should be t
 
 assert.equal( method.some( ( method ) => method === "setB" ), true, "should be true" );
 
+assert.equal( methon( b, [ Function, Object ] ).length, 2, "should be equal" );
+
 console.log( "ok" );

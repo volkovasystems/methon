@@ -1,9 +1,13 @@
 yarn add \
 babel-runtime \
 apiqe \
+een \
+eqe \
+fname \
 meton \
 posp \
 protype \
+pyck \
 --save && \
 yarn add \
 babel-cli \
@@ -15,8 +19,12 @@ webpack \
 --dev && \
 bower install \
 apiqe \
+een \
+eqe \
+fname \
 meton \
 posp \
 protype \
+pyck \
 --save \
 --force-latest

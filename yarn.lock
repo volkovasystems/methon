@@ -13,8 +13,8 @@ acorn-dynamic-import@^2.0.0:
     acorn "^4.0.3"
 
 acorn@^4.0.3:
-  version "4.0.11"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.11.tgz#edcda3bd937e7556410d42ed5860f67399c794c0"
+  version "4.0.13"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-4.0.13.tgz#105495ae5361d697bd195c825192e1ad7f253787"
 
 acorn@^5.0.0:
   version "5.0.3"
@@ -97,6 +97,17 @@ apiqe@^0.1.0:
     eqe "^0.2.0"
     falzy "^0.19.0"
     raze "^0.29.0"
+
+aply@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/aply/-/aply-0.1.0.tgz#51a8cbb7435d52689a8e287141d6553282a9407c"
+  dependencies:
+    babel-runtime "^6.23.0"
+    protype "^0.21.0"
+    raze "^0.29.0"
+    wichevr "^0.9.0"
+    wichis "^0.13.0"
+    zelf "^0.11.0"
 
 aproba@^1.0.3:
   version "1.1.1"
@@ -1013,6 +1024,23 @@ concat-map@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
 
+condev@^0.12.0:
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/condev/-/condev-0.12.0.tgz#0195cdda5c39a124f25c1557688c9c51f1ad9bc5"
+  dependencies:
+    annon "^0.6.0"
+    aply "^0.1.0"
+    babel-runtime "^6.23.0"
+    clazof "^0.27.0"
+    doubt "^0.26.0"
+    enyof "^0.7.0"
+    eqe "^0.2.0"
+    falzy "^0.19.0"
+    fnamed "^0.8.0"
+    protype "^0.21.0"
+    raze "^0.29.0"
+    truly "^0.18.0"
+
 condev@^0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/condev/-/condev-0.9.0.tgz#a3602b753e9070a437d0be7a282eae6bd756400a"
@@ -1355,6 +1383,15 @@ enyof@^0.6.0:
     budge "^0.28.0"
     eqe "^0.2.0"
     plough "^0.25.0"
+
+enyof@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/enyof/-/enyof-0.7.0.tgz#397a5be86bdc7768bcdbadf4a34ea3153de8e11b"
+  dependencies:
+    babel-runtime "^6.23.0"
+    eqe "^0.2.0"
+    plough "^0.25.0"
+    shft "^0.1.0"
 
 eqe@^0.2.0:
   version "0.2.0"
@@ -1783,8 +1820,8 @@ is-builtin-module@^1.0.0:
     builtin-modules "^1.0.0"
 
 is-dotfile@^1.0.0:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/is-dotfile/-/is-dotfile-1.0.2.tgz#2c132383f39199f8edc268ca01b9b007d205cc4d"
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/is-dotfile/-/is-dotfile-1.0.3.tgz#a6a2f32ffd2dfb04f5ca25ecd0f6b83cf798a1e1"
 
 is-equal-shallow@^0.1.3:
   version "0.1.3"
@@ -2252,8 +2289,8 @@ node-libs-browser@^2.0.0:
     vm-browserify "0.0.4"
 
 node-pre-gyp@^0.6.29:
-  version "0.6.34"
-  resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.6.34.tgz#94ad1c798a11d7fc67381b50d47f8cc18d9799f7"
+  version "0.6.36"
+  resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.6.36.tgz#db604112cb74e0d477554e9b505b17abddfab786"
   dependencies:
     mkdirp "^0.5.1"
     nopt "^4.0.1"
@@ -2597,6 +2634,15 @@ pyck@^0.28.0:
     truly "^0.18.0"
     zelf "^0.11.0"
 
+pyck@^0.32.0:
+  version "0.32.0"
+  resolved "https://registry.yarnpkg.com/pyck/-/pyck-0.32.0.tgz#7d48e472267a9c06add639a505f7e4435ca2c6f4"
+  dependencies:
+    babel-runtime "^6.23.0"
+    condev "^0.12.0"
+    raze "^0.29.0"
+    zelf "^0.11.0"
+
 qs@~6.4.0:
   version "6.4.0"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.4.0.tgz#13e26d28ad6b0ffaa91312cd3bf708ed351e7233"
@@ -2831,6 +2877,16 @@ sha.js@^2.4.0, sha.js@^2.4.8:
   resolved "https://registry.yarnpkg.com/sha.js/-/sha.js-2.4.8.tgz#37068c2c476b6baf402d14a49c67f597921f634f"
   dependencies:
     inherits "^2.0.1"
+
+shft@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/shft/-/shft-0.1.0.tgz#8ce90f71f661c49cb9ef9c741a7a175fb103853f"
+  dependencies:
+    arid "^0.25.0"
+    babel-runtime "^6.23.0"
+    doubt "^0.26.0"
+    protype "^0.21.0"
+    raze "^0.29.0"
 
 signal-exit@^3.0.0:
   version "3.0.2"
@@ -3230,9 +3286,9 @@ webpack-sources@^0.2.3:
     source-list-map "^1.1.1"
     source-map "~0.5.3"
 
-webpack@^2.6.0:
-  version "2.6.0"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-2.6.0.tgz#7e650a92816abff5db5f43316b0b8b19b13d76c1"
+webpack@^2.6.1:
+  version "2.6.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-2.6.1.tgz#2e0457f0abb1ac5df3ab106c69c672f236785f07"
   dependencies:
     acorn "^5.0.0"
     acorn-dynamic-import "^2.0.0"

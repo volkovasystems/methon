@@ -1,6 +1,6 @@
 {
   "name": "methon",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Extract a list of inherited, enumerable and non-enumerable method names.",
   "main": "methon.deploy.js",
   "support": "methon.support.js",
@@ -26,10 +26,19 @@
     "test",
     "tests"
   ],
+  "resolutions": {
+    "pyck": "^0.32.0",
+    "condev": "^0.12.0",
+    "enyof": "^0.7.0"
+  },
   "dependencies": {
     "apiqe": "^0.1.0",
+    "een": "^0.18.0",
+    "eqe": "^0.2.0",
+    "fname": "^0.8.0",
     "meton": "^0.0.0",
     "posp": "^0.5.0",
-    "protype": "^0.21.0"
+    "protype": "^0.21.0",
+    "pyck": "^0.32.0"
   }
 }

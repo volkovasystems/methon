@@ -48,29 +48,42 @@
               	@include:
               		{
               			"apiqe": "apiqe",
+              			"een": "een",
+              			"eqe": "eqe",
+              			"fname": "fname",
               			"meton": "meton",
               			"posp": "posp",
               			"protype": "protype",
+              			"pyck": "pyck"
               		}
               	@end-include
               */var _getPrototypeOf = require("babel-runtime/core-js/object/get-prototype-of");var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var apiqe = require("apiqe");
+var een = require("een");
+var eqe = require("eqe");
+var fname = require("fname");
 var meton = require("meton");
 var posp = require("posp");
 var protype = require("protype");
+var pyck = require("pyck");
 
-var methon = function methon(entity) {
+var checker = function checker(blueprint, constructor) {
+	return eqe(blueprint, constructor) || fname(blueprint) === fname(constructor);
+};
+
+var methon = function methon(entity, limit) {
 	/*;
-                                      	@meta-configuration:
-                                      		{
-                                      			"entity:required": [
-                                      				"function",
-                                      				"object"
-                                      			]
-                                      		}
-                                      	@end-meta-configuration
-                                      */
+                                             	@meta-configuration:
+                                             		{
+                                             			"entity:required": [
+                                             				"function",
+                                             				"object"
+                                             			],
+                                             			"limit": "[function,string]"
+                                             		}
+                                             	@end-meta-configuration
+                                             */
 
 	if (protype(entity, OBJECT)) {
 		entity = entity.constructor;
@@ -80,10 +93,21 @@ var methon = function methon(entity) {
 		throw new Error("invalid entity");
 	}
 
+	limit = pyck(limit, [FUNCTION, STRING]);
+
 	var prototype = entity.prototype;
+
+	if (een(limit, prototype.constructor, checker)) {
+		return [];
+	}
+
 	var method = meton(prototype);
 
 	while (prototype = (0, _getPrototypeOf2.default)(prototype)) {
+		if (een(limit, prototype.constructor, checker)) {
+			continue;
+		}
+
 		method = apiqe(method, meton(prototype));
 	}
 
