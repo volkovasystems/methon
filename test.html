@@ -1,8 +1,50 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./methon.deploy.js">
-		</script>
+		<title>methon unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./methon.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "methon unit test", function( assert ) {
+
+				class A {
+					constructor( ){ }
+
+					setA( ){
+						return "a";
+					}
+				}
+
+				class B extends A {
+					constructor( ){ super( ); }
+
+					setB( ){
+						return "b";
+					}
+				}
+
+				let b = new B( );
+
+				let method = methon( b );
+
+				assert.equal( method.some( ( method ) => method === "setA" ), true, "should be true" );
+
+				assert.equal( method.some( ( method ) => method === "setB" ), true, "should be true" );
+
+				assert.equal( methon( b, [ Function, Object ] ).length, 2, "should be equal" );
+				
+			} );
+		</script>
+	</body>
 </html>
