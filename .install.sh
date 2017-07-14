@@ -6,7 +6,6 @@ eqe \
 fname \
 meton \
 posp \
-protype \
 pyck \
 --save && \
 yarn add \
@@ -24,7 +23,6 @@ eqe \
 fname \
 meton \
 posp \
-protype \
 pyck \
 --save \
 --force-latest

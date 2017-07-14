@@ -57,7 +57,6 @@
 			"fname": "fname",
 			"meton": "meton",
 			"posp": "posp",
-			"protype": "protype",
 			"pyck": "pyck"
 		}
 	@end-include
@@ -69,7 +68,6 @@ const eqe = require( "eqe" );
 const fname = require( "fname" );
 const meton = require( "meton" );
 const posp = require( "posp" );
-const protype = require( "protype" );
 const pyck = require( "pyck" );
 
 const checker = function checker( blueprint, constructor ){
@@ -89,11 +87,11 @@ const methon = function methon( entity, limit ){
 		@end-meta-configuration
 	*/
 
-	if( protype( entity, OBJECT ) ){
+	if( typeof entity == "object" ){
 		entity = entity.constructor;
 	}
 
-	if( !protype( entity, FUNCTION ) ){
+	if( typeof entity != "function" ){
 		throw new Error( "invalid entity" );
 	}
 

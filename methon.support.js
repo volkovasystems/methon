@@ -57,11 +57,10 @@
               			"fname": "fname",
               			"meton": "meton",
               			"posp": "posp",
-              			"protype": "protype",
               			"pyck": "pyck"
               		}
               	@end-include
-              */var _getPrototypeOf = require("babel-runtime/core-js/object/get-prototype-of");var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
+              */var _getPrototypeOf = require("babel-runtime/core-js/object/get-prototype-of");var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);var _typeof2 = require("babel-runtime/helpers/typeof");var _typeof3 = _interopRequireDefault(_typeof2);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var apiqe = require("apiqe");
 var een = require("een");
@@ -69,7 +68,6 @@ var eqe = require("eqe");
 var fname = require("fname");
 var meton = require("meton");
 var posp = require("posp");
-var protype = require("protype");
 var pyck = require("pyck");
 
 var checker = function checker(blueprint, constructor) {
@@ -89,11 +87,11 @@ var methon = function methon(entity, limit) {
                                              	@end-meta-configuration
                                              */
 
-	if (protype(entity, OBJECT)) {
+	if ((typeof entity === "undefined" ? "undefined" : (0, _typeof3.default)(entity)) == "object") {
 		entity = entity.constructor;
 	}
 
-	if (!protype(entity, FUNCTION)) {
+	if (typeof entity != "function") {
 		throw new Error("invalid entity");
 	}
 
