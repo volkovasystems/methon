@@ -1,50 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>methon unit test</title>
+		<meta charset="utf-8">
 
-		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+		<title>test:methon</title>
 
-		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
-
-		<script type="application/javascript" src="./methon.deploy.js"></script>
+		<link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css"/>
 	</head>
 
 	<body>
-		<div id="qunit"></div>
+		<div id="mocha"></div>
 
-		<div id="qunit-fixture"></div>
+		<script type="application/javascript" src="https://unpkg.com/mocha/mocha.js"></script>
 
 		<script type="application/javascript">
-			QUnit.test( "methon unit test", function( assert ) {
+			mocha.setup( "bdd" );
+		</script>
 
-				class A {
-					constructor( ){ }
+		<script type="application/javascript" src="./test.deploy.js"></script>
 
-					setA( ){
-						return "a";
-					}
-				}
-
-				class B extends A {
-					constructor( ){ super( ); }
-
-					setB( ){
-						return "b";
-					}
-				}
-
-				let b = new B( );
-
-				let method = methon( b );
-
-				assert.equal( method.some( ( method ) => method === "setA" ), true, "should be equal to true" );
-
-				assert.equal( method.some( ( method ) => method === "setB" ), true, "should be equal to true" );
-
-				assert.equal( methon( b, [ Function, Object ] ).length, 2, "should be equal to 2" );
-
-			} );
+		<script type="application/javascript">
+			mocha.run( );
 		</script>
 	</body>
 </html>
