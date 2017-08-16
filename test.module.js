@@ -309,6 +309,51 @@ describe( "methon", ( ) => {
 //: @bridge:
 
 describe( "methon", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`methon with instance of class B`", ( ) => {
+
+		it( "should return a list of inherited, enumerable and non-enumerable method names of class B", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					class A {
+						constructor( ){ }
+
+						setA( ){
+							return "a";
+						}
+					}
+
+					class B extends A {
+						constructor( ){ super( ); }
+
+						setB( ){
+							return "b";
+						}
+					}
+
+					let b = new B( );
+
+					let method = methon( b );
+
+					return method.length > 0;
+
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+
+	} );
+
+
+
 } );
 
 //: @end-bridge
