@@ -350,9 +350,118 @@ describe( "methon", ( ) => {
 
 		} );
 
+		it( "should contain 'setA'", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					class A {
+						constructor( ){ }
+
+						setA( ){
+							return "a";
+						}
+					}
+
+					class B extends A {
+						constructor( ){ super( ); }
+
+						setB( ){
+							return "b";
+						}
+					}
+
+					let b = new B( );
+
+					let method = methon( b );
+
+					return method.some( ( method ) => method === "setA" );
+
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+
+		it( "should contain 'setB'", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					class A {
+						constructor( ){ }
+
+						setA( ){
+							return "a";
+						}
+					}
+
+					class B extends A {
+						constructor( ){ super( ); }
+
+						setB( ){
+							return "b";
+						}
+					}
+
+					let b = new B( );
+
+					let method = methon( b );
+
+					return method.some( ( method ) => method === "setB" );
+
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, true );
+
+		} );
+
 	} );
 
 
+	describe( "`methon with instance of class B and function and object limit parameter`", ( ) => {
+
+		it( "should return list with length of 2", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+
+					class A {
+						constructor( ){ }
+
+						setA( ){
+							return "a";
+						}
+					}
+
+					class B extends A {
+						constructor( ){ super( ); }
+
+						setB( ){
+							return "b";
+						}
+					}
+
+					let b = new B( );
+
+					return methon( b, [ Function, Object ] ).length;
+
+				}
+
+			).value;
+			//: @end-ignore
+			assert.equal( result, 2 );
+
+		} );
+
+	} );
 
 } );
 
