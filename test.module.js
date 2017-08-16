@@ -72,7 +72,7 @@ describe( "methon", ( ) => {
 
 	describe( "`methon with instance of class B`", ( ) => {
 
-		it( "should extract a list of inherited, enumerable and non-enumerable method names of class B", ( ) => {
+		it( "should return a list of inherited, enumerable and non-enumerable method names of class B", ( ) => {
 
 			class A {
 				constructor( ){ }
@@ -98,6 +98,87 @@ describe( "methon", ( ) => {
 
 		} );
 
+		it( "should contain 'setA'", ( ) => {
+
+			class A {
+				constructor( ){ }
+
+				setA( ){
+					return "a";
+				}
+			}
+
+			class B extends A {
+				constructor( ){ super( ); }
+
+				setB( ){
+					return "b";
+				}
+			}
+
+			let b = new B( );
+
+			let method = methon( b );
+
+			assert.equal( method.some( ( method ) => method === "setA" ), true );
+
+		} );
+
+		it( "should contain 'setB'", ( ) => {
+
+			class A {
+				constructor( ){ }
+
+				setA( ){
+					return "a";
+				}
+			}
+
+			class B extends A {
+				constructor( ){ super( ); }
+
+				setB( ){
+					return "b";
+				}
+			}
+
+			let b = new B( );
+
+			let method = methon( b );
+
+			assert.equal( method.some( ( method ) => method === "setB" ), true );
+
+		} );
+
+	} );
+
+
+	describe( "`methon with instance of class B and function and object limit parameter`", ( ) => {
+
+		it( "should return list with length of 2", ( ) => {
+
+			class A {
+				constructor( ){ }
+
+				setA( ){
+					return "a";
+				}
+			}
+
+			class B extends A {
+				constructor( ){ super( ); }
+
+				setB( ){
+					return "b";
+				}
+			}
+
+			let b = new B( );
+
+			assert.equal( methon( b, [ Function, Object ] ).length, 2 );
+
+		} );
+
 	} );
 
 } );
@@ -108,6 +189,118 @@ describe( "methon", ( ) => {
 //: @client:
 
 describe( "methon", ( ) => {
+
+	describe( "`methon with instance of class B`", ( ) => {
+
+		it( "should return a list of inherited, enumerable and non-enumerable method names of class B", ( ) => {
+
+			class A {
+				constructor( ){ }
+
+				setA( ){
+					return "a";
+				}
+			}
+
+			class B extends A {
+				constructor( ){ super( ); }
+
+				setB( ){
+					return "b";
+				}
+			}
+
+			let b = new B( );
+
+			let method = methon( b );
+
+			assert.equal( method.length > 0, true );
+
+		} );
+
+		it( "should contain 'setA'", ( ) => {
+
+			class A {
+				constructor( ){ }
+
+				setA( ){
+					return "a";
+				}
+			}
+
+			class B extends A {
+				constructor( ){ super( ); }
+
+				setB( ){
+					return "b";
+				}
+			}
+
+			let b = new B( );
+
+			let method = methon( b );
+
+			assert.equal( method.some( ( method ) => method === "setA" ), true );
+
+		} );
+
+		it( "should contain 'setB'", ( ) => {
+
+			class A {
+				constructor( ){ }
+
+				setA( ){
+					return "a";
+				}
+			}
+
+			class B extends A {
+				constructor( ){ super( ); }
+
+				setB( ){
+					return "b";
+				}
+			}
+
+			let b = new B( );
+
+			let method = methon( b );
+
+			assert.equal( method.some( ( method ) => method === "setB" ), true );
+
+		} );
+
+	} );
+
+
+	describe( "`methon with instance of class B and function and object limit parameter`", ( ) => {
+
+		it( "should return list with length of 2", ( ) => {
+
+			class A {
+				constructor( ){ }
+
+				setA( ){
+					return "a";
+				}
+			}
+
+			class B extends A {
+				constructor( ){ super( ); }
+
+				setB( ){
+					return "b";
+				}
+			}
+
+			let b = new B( );
+
+			assert.equal( methon( b, [ Function, Object ] ).length, 2 );
+
+		} );
+
+	} );
+
 } );
 
 //: @end-client
