@@ -1,16 +1,74 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-15T06:09:15.780Z",
-    "end": "2017-08-15T06:09:15.780Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 3,
+		"tests": 4,
+		"passes": 4,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-16T07:12:23.151Z",
+		"end": "2017-08-16T07:12:23.173Z",
+		"duration": 22
+	},
+	"tests": [
+		{
+			"title": "should return a list of inherited, enumerable and non-enumerable method names of class B",
+			"fullTitle": "methon `methon with instance of class B` should return a list of inherited, enumerable and non-enumerable method names of class B",
+			"duration": 8,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'setA'",
+			"fullTitle": "methon `methon with instance of class B` should contain 'setA'",
+			"duration": 5,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'setB'",
+			"fullTitle": "methon `methon with instance of class B` should contain 'setB'",
+			"duration": 4,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return list with length of 2",
+			"fullTitle": "methon `methon with instance of class B and function and object limit parameter` should return list with length of 2",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should return a list of inherited, enumerable and non-enumerable method names of class B",
+			"fullTitle": "methon `methon with instance of class B` should return a list of inherited, enumerable and non-enumerable method names of class B",
+			"duration": 8,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'setA'",
+			"fullTitle": "methon `methon with instance of class B` should contain 'setA'",
+			"duration": 5,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should contain 'setB'",
+			"fullTitle": "methon `methon with instance of class B` should contain 'setB'",
+			"duration": 4,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should return list with length of 2",
+			"fullTitle": "methon `methon with instance of class B and function and object limit parameter` should return list with length of 2",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

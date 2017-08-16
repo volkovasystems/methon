@@ -1,0 +1,162 @@
+{
+	"state": {
+		"passed": 4,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-16T07:12:24.303Z",
+	"end": "2017-08-16T07:12:59.767Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "methon",
+			"duration": 0,
+			"start": "2017-08-16T07:12:59.347Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "methon",
+			"duration": 243,
+			"start": "2017-08-16T07:12:59.348Z",
+			"end": "2017-08-16T07:12:59.591Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-16T07:12:59.349Z",
+					"end": "2017-08-16T07:12:59.349Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "methon",
+					"associatedTest": "should return a list of inherited, enumerable and non-enumerable method names of class B"
+				},
+				{
+					"start": "2017-08-16T07:12:59.459Z",
+					"end": "2017-08-16T07:12:59.460Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "methon",
+					"associatedTest": "should return a list of inherited, enumerable and non-enumerable method names of class B"
+				},
+				{
+					"start": "2017-08-16T07:12:59.460Z",
+					"end": "2017-08-16T07:12:59.460Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "methon",
+					"associatedTest": "should contain 'setA'"
+				},
+				{
+					"start": "2017-08-16T07:12:59.503Z",
+					"end": "2017-08-16T07:12:59.503Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "methon",
+					"associatedTest": "should contain 'setA'"
+				},
+				{
+					"start": "2017-08-16T07:12:59.503Z",
+					"end": "2017-08-16T07:12:59.503Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "methon",
+					"associatedTest": "should contain 'setB'"
+				},
+				{
+					"start": "2017-08-16T07:12:59.548Z",
+					"end": "2017-08-16T07:12:59.548Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "methon",
+					"associatedTest": "should contain 'setB'"
+				},
+				{
+					"start": "2017-08-16T07:12:59.549Z",
+					"end": "2017-08-16T07:12:59.549Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "methon",
+					"associatedTest": "should return list with length of 2"
+				},
+				{
+					"start": "2017-08-16T07:12:59.591Z",
+					"end": "2017-08-16T07:12:59.591Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "methon",
+					"associatedTest": "should return list with length of 2"
+				},
+				{
+					"start": "2017-08-16T07:12:59.591Z",
+					"end": "2017-08-16T07:12:59.591Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "methon"
+				}
+			]
+		},
+		{
+			"name": "`methon with instance of class B`",
+			"duration": 200,
+			"start": "2017-08-16T07:12:59.348Z",
+			"end": "2017-08-16T07:12:59.548Z",
+			"tests": [
+				{
+					"name": "should return a list of inherited, enumerable and non-enumerable method names of class B",
+					"start": "2017-08-16T07:12:59.349Z",
+					"end": "2017-08-16T07:12:59.459Z",
+					"duration": 110,
+					"state": "pass"
+				},
+				{
+					"name": "should contain 'setA'",
+					"start": "2017-08-16T07:12:59.460Z",
+					"end": "2017-08-16T07:12:59.503Z",
+					"duration": 43,
+					"state": "pass"
+				},
+				{
+					"name": "should contain 'setB'",
+					"start": "2017-08-16T07:12:59.503Z",
+					"end": "2017-08-16T07:12:59.548Z",
+					"duration": 45,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`methon with instance of class B and function and object limit parameter`",
+			"duration": 42,
+			"start": "2017-08-16T07:12:59.549Z",
+			"end": "2017-08-16T07:12:59.591Z",
+			"tests": [
+				{
+					"name": "should return list with length of 2",
+					"start": "2017-08-16T07:12:59.549Z",
+					"end": "2017-08-16T07:12:59.591Z",
+					"duration": 42,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
