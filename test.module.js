@@ -70,6 +70,36 @@ const path = require( "path" );
 
 describe( "methon", ( ) => {
 
+	describe( "`methon with instance of class B`", ( ) => {
+
+		it( "should extract a list of inherited, enumerable and non-enumerable method names of class B", ( ) => {
+
+			class A {
+				constructor( ){ }
+
+				setA( ){
+					return "a";
+				}
+			}
+
+			class B extends A {
+				constructor( ){ super( ); }
+
+				setB( ){
+					return "b";
+				}
+			}
+
+			let b = new B( );
+
+			let method = methon( b );
+
+			assert.equal( method.length > 0, true );
+
+		} );
+
+	} );
+
 } );
 
 //: @end-server
