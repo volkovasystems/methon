@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-16T07:12:24.303Z",
-	"end": "2017-08-16T07:12:59.767Z",
+	"start": "2017-08-22T09:06:23.910Z",
+	"end": "2017-08-22T09:07:27.701Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,84 +28,84 @@
 		{
 			"name": "methon",
 			"duration": 0,
-			"start": "2017-08-16T07:12:59.347Z",
+			"start": "2017-08-22T09:07:27.215Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "methon",
-			"duration": 243,
-			"start": "2017-08-16T07:12:59.348Z",
-			"end": "2017-08-16T07:12:59.591Z",
+			"duration": 306,
+			"start": "2017-08-22T09:07:27.216Z",
+			"end": "2017-08-22T09:07:27.522Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-16T07:12:59.349Z",
-					"end": "2017-08-16T07:12:59.349Z",
+					"start": "2017-08-22T09:07:27.218Z",
+					"end": "2017-08-22T09:07:27.218Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "methon",
 					"associatedTest": "should return a list of inherited, enumerable and non-enumerable method names of class B"
 				},
 				{
-					"start": "2017-08-16T07:12:59.459Z",
-					"end": "2017-08-16T07:12:59.460Z",
+					"start": "2017-08-22T09:07:27.351Z",
+					"end": "2017-08-22T09:07:27.351Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "methon",
+					"associatedTest": "should return a list of inherited, enumerable and non-enumerable method names of class B"
+				},
+				{
+					"start": "2017-08-22T09:07:27.352Z",
+					"end": "2017-08-22T09:07:27.352Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "methon",
+					"associatedTest": "should contain 'setA'"
+				},
+				{
+					"start": "2017-08-22T09:07:27.401Z",
+					"end": "2017-08-22T09:07:27.401Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "methon",
+					"associatedTest": "should contain 'setA'"
+				},
+				{
+					"start": "2017-08-22T09:07:27.402Z",
+					"end": "2017-08-22T09:07:27.402Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "methon",
+					"associatedTest": "should contain 'setB'"
+				},
+				{
+					"start": "2017-08-22T09:07:27.466Z",
+					"end": "2017-08-22T09:07:27.467Z",
 					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "methon",
-					"associatedTest": "should return a list of inherited, enumerable and non-enumerable method names of class B"
-				},
-				{
-					"start": "2017-08-16T07:12:59.460Z",
-					"end": "2017-08-16T07:12:59.460Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "methon",
-					"associatedTest": "should contain 'setA'"
-				},
-				{
-					"start": "2017-08-16T07:12:59.503Z",
-					"end": "2017-08-16T07:12:59.503Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "methon",
-					"associatedTest": "should contain 'setA'"
-				},
-				{
-					"start": "2017-08-16T07:12:59.503Z",
-					"end": "2017-08-16T07:12:59.503Z",
-					"duration": 0,
-					"title": "\"before each\" hook",
-					"associatedSuite": "methon",
 					"associatedTest": "should contain 'setB'"
 				},
 				{
-					"start": "2017-08-16T07:12:59.548Z",
-					"end": "2017-08-16T07:12:59.548Z",
-					"duration": 0,
-					"title": "\"after each\" hook",
-					"associatedSuite": "methon",
-					"associatedTest": "should contain 'setB'"
-				},
-				{
-					"start": "2017-08-16T07:12:59.549Z",
-					"end": "2017-08-16T07:12:59.549Z",
+					"start": "2017-08-22T09:07:27.468Z",
+					"end": "2017-08-22T09:07:27.468Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "methon",
 					"associatedTest": "should return list with length of 2"
 				},
 				{
-					"start": "2017-08-16T07:12:59.591Z",
-					"end": "2017-08-16T07:12:59.591Z",
+					"start": "2017-08-22T09:07:27.521Z",
+					"end": "2017-08-22T09:07:27.521Z",
 					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "methon",
 					"associatedTest": "should return list with length of 2"
 				},
 				{
-					"start": "2017-08-16T07:12:59.591Z",
-					"end": "2017-08-16T07:12:59.591Z",
+					"start": "2017-08-22T09:07:27.522Z",
+					"end": "2017-08-22T09:07:27.522Z",
 					"duration": 0,
 					"title": "\"after all\" hook",
 					"associatedSuite": "methon"
@@ -114,29 +114,29 @@
 		},
 		{
 			"name": "`methon with instance of class B`",
-			"duration": 200,
-			"start": "2017-08-16T07:12:59.348Z",
-			"end": "2017-08-16T07:12:59.548Z",
+			"duration": 251,
+			"start": "2017-08-22T09:07:27.217Z",
+			"end": "2017-08-22T09:07:27.468Z",
 			"tests": [
 				{
 					"name": "should return a list of inherited, enumerable and non-enumerable method names of class B",
-					"start": "2017-08-16T07:12:59.349Z",
-					"end": "2017-08-16T07:12:59.459Z",
-					"duration": 110,
+					"start": "2017-08-22T09:07:27.217Z",
+					"end": "2017-08-22T09:07:27.351Z",
+					"duration": 134,
 					"state": "pass"
 				},
 				{
 					"name": "should contain 'setA'",
-					"start": "2017-08-16T07:12:59.460Z",
-					"end": "2017-08-16T07:12:59.503Z",
-					"duration": 43,
+					"start": "2017-08-22T09:07:27.351Z",
+					"end": "2017-08-22T09:07:27.401Z",
+					"duration": 50,
 					"state": "pass"
 				},
 				{
 					"name": "should contain 'setB'",
-					"start": "2017-08-16T07:12:59.503Z",
-					"end": "2017-08-16T07:12:59.548Z",
-					"duration": 45,
+					"start": "2017-08-22T09:07:27.401Z",
+					"end": "2017-08-22T09:07:27.466Z",
+					"duration": 65,
 					"state": "pass"
 				}
 			],
@@ -144,15 +144,15 @@
 		},
 		{
 			"name": "`methon with instance of class B and function and object limit parameter`",
-			"duration": 42,
-			"start": "2017-08-16T07:12:59.549Z",
-			"end": "2017-08-16T07:12:59.591Z",
+			"duration": 53,
+			"start": "2017-08-22T09:07:27.468Z",
+			"end": "2017-08-22T09:07:27.521Z",
 			"tests": [
 				{
 					"name": "should return list with length of 2",
-					"start": "2017-08-16T07:12:59.549Z",
-					"end": "2017-08-16T07:12:59.591Z",
-					"duration": 42,
+					"start": "2017-08-22T09:07:27.468Z",
+					"end": "2017-08-22T09:07:27.521Z",
+					"duration": 53,
 					"state": "pass"
 				}
 			],
