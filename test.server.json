@@ -5,29 +5,29 @@
 		"passes": 4,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-22T09:06:22.521Z",
-		"end": "2017-08-22T09:06:22.547Z",
-		"duration": 26
+		"start": "2017-08-31T05:40:32.852Z",
+		"end": "2017-08-31T05:40:32.892Z",
+		"duration": 40
 	},
 	"tests": [
 		{
 			"title": "should return a list of inherited, enumerable and non-enumerable method names of class B",
 			"fullTitle": "methon `methon with instance of class B` should return a list of inherited, enumerable and non-enumerable method names of class B",
-			"duration": 11,
+			"duration": 15,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should contain 'setA'",
 			"fullTitle": "methon `methon with instance of class B` should contain 'setA'",
-			"duration": 4,
+			"duration": 8,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should contain 'setB'",
 			"fullTitle": "methon `methon with instance of class B` should contain 'setB'",
-			"duration": 4,
+			"duration": 7,
 			"currentRetry": 0,
 			"err": {}
 		},
@@ -45,21 +45,21 @@
 		{
 			"title": "should return a list of inherited, enumerable and non-enumerable method names of class B",
 			"fullTitle": "methon `methon with instance of class B` should return a list of inherited, enumerable and non-enumerable method names of class B",
-			"duration": 11,
+			"duration": 15,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should contain 'setA'",
 			"fullTitle": "methon `methon with instance of class B` should contain 'setA'",
-			"duration": 4,
+			"duration": 8,
 			"currentRetry": 0,
 			"err": {}
 		},
 		{
 			"title": "should contain 'setB'",
 			"fullTitle": "methon `methon with instance of class B` should contain 'setB'",
-			"duration": 4,
+			"duration": 7,
 			"currentRetry": 0,
 			"err": {}
 		},
